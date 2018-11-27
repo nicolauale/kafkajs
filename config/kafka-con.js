@@ -25,10 +25,12 @@ module.exports = () => {
       
     consumer.on('message', function(message) {
         console.log(message);
+        return message;
     });
       
     consumer.on('error', function(err) {
         console.log('error', err);
+        return '{"error", "' + err + '"}';
     });
       
     process.on('SIGINT', function() {

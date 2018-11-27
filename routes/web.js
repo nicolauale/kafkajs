@@ -17,9 +17,9 @@ module.exports = (app) => {
     app.get('/ler', (req,res) => {
 
         var kfk = require('../config/kafka-con');
-        kfk();
+        result  = kfk()
+        res.send(result);
 
-        res.send({"service":"leitura"});
     });
         
 };
