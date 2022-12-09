@@ -9,7 +9,7 @@
   "author": "Nicolau",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "kafka-node": "^3.0.1",
     "mysql": "^2.16.0"
   }
